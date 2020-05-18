@@ -1,0 +1,302 @@
+HTTP
+
+
+1: Basic features of HTTP: HTTP stands for Hypertext Transfer  Protocol is an application level protocol for distributed and collaborative information systems. It is a generic and stateless protocol.
+Whenever a client makes a request, a browser or a webpage initiates an HTTP and through HTTP, the server will respond to the request to the client. Use TCP connections. Server does not need to recognize the user by default
+HTTP is media independent, connectionless and stateless
+2 What are the request methods of HTTP?
+GET: Request using GET to retrieve data
+HEAD: same to GET without the response body
+POST: used to submit an entity to the specified resource, request and update data
+PUT: to modify a single resource
+DELETE: to delete a specific resource
+CONNECT: establish a tunnel to the server
+OPTION: describe the communication options for the target resource
+TRACE
+PATCH
+3. Difference between GET and POST: GET is used to only retrieve data
+                                             POST is used to update and change the data from the server
+4. What is status code in HTTP?
+1xx: informational: request has been processed and continue to process
+2xx success: action was successfully received and accepted
+3xx Redirection: Further action need to be taken before it can complete the request
+4xx Client Error: contain incorrect syntax and cannot be fulfilled
+5xx Server Error: The server failed to fullfill a valid request
+5: header field in HTTP: general header, client request header, server response header, entity header
+6. What is URI?
+Uniform Resource Identifier: it can be a name, locator, or both for an online resource where URL is just the locator. URL stands for Uniform Resource Locator
+7. What is Idempotent method and why do we call them?
+Idempotent method is a method can be called many times without different resources
+8.  Messages include requests from client to server and responses from server to client which will have the following format:
+9. What is session state in HTTP?
+A method keep tracks for user session during a HTTP request
+10. HTTPS is a secure version of HTTP, it is used to send sensitive data between a web browser and a website
+Introduction to APIs
+1. What is REST and RESTFUL?
+Rest stands for representational state transfer that provide standards between system on the web, rest is separated from the client and server. 
+2. Https methods that are supported by rest including HTTP get, HTTP post, HTTP put, HTTP delete 
+3. Restful web services are built to work best on the Web. REST is used to apply to a web services and enable services to work best on the web
+4. Explain resource in REST?
+Resource in REST are Texts, file, images or video. REST uses a various representation to present resource such as JSON, XML or Text
+5. Protocols that are used for web services including SOAP, HTTP
+6. What is messaging in Restful Services
+Basically, a client sends a message in the form of HTTP Request and server responds in the HTTP Response
+7. Core component of HTTP Request
+  
+
+Verb: HTTP methods such as GET, POST, DELETE, PUt
+URI: identify the resource on the server
+HTTP version:
+Request header: constraint metadata for the HTTP request
+Request Body: message content
+8. Core component of HTTP Response
+  
+
+Response code: indicate the server status
+ HTTP Version: indicate the HTTP version
+
+
+10. What is payload in Restful Sevices?
+Payload is the data send by a POST or PUT request.
+11. Explain caching mechanism?
+Caching is a technique to speed up data lookups. The data is read directly from a cache on your computer that needs the data
+12. Differences between SOAP and REST API?
+SOAP stands for simple object access protocol and it is harder to use compare to REST.
+SOAP needs to follow some rules
+REST does not require processing so it is more flexible
+SOAP used XML to request and respond messages
+13. Advantages and disadvantages of statelessness.
+Advantages: web services can treat each method independently
+                Do not need to maintain the client previous interaction
+                Work well with the http because http itself is statelessness
+Disavantages: need to get extra information to interpret the client state
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Object Oriented Programming
+1. Differences between a class and an object: a class is a user blueprint or prototype where an object is created, object is a basic unit of OOP that represent the real life entities such as state, behavior, identity
+2. What is encapsulation? Basically, encapsulation is the way to group up data in a single unit. It is the mechanism to bind code together and prevents the data from being accessed by the code outside of this shield
+3. Polymorphism is the ability of an object to take on many form. A java object can pass more than one IS-A test is considered to be polymorphic.
+4. Explain overriding and overloading and its advantages?
+   1. Overriding is basically using two or more methods with same method name and same parameter
+   2. Overloading is using two or more methods with same method but different parameter
+5. What is inheritance and type of inheritance?
+Inheritance is a mechanism which used one class to obtain property of another class. For example, child class can inherit parent classes
+Type of inheritance: Single inheritance, multiple inheritance, and multilevel of inheritance
+6. What is an abstract class?
+Is a class that is declared as abstrac, it may or maynot include abstract methods, it cannot be instantiated but they can be subclassed
+7. What are interfaces? And how multiple inheritance achieve this?
+Is a reference type similar to a class contain only constants, methods signature, default methods, static methods and it cannot be instantiated
+Multiple inheritance by interface occur if a class implements multiple interfaces or also if interface itself extends multiple interfaces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unit Testing and JUnit
+1. Unit testing is a piece of code that developer uses to test a specific functionality in the code
+2. Difference between manual testing and automated testing. Manual testing is testing of the software where tests are executed by a QA Analyst. Automation testing is to use automation tools to develop the test scripts and validate software.
+3. Is it necessary to test every possible logic?
+I think it is necessary to test every possible logic because it will prevent any possible error in the code and it is easier to determine any bugs before it releases.
+4. What are features of JUnit
+JUnit is a unit testing framework for java programming language.
+Open source framework, used for writing and running test
+Provide annotation to identify test methods
+Provide assertions for testing 
+Provide test runner
+Allow to write code faster
+5. Static methods to test for certain conditions via the Assert class. It allows us to specify the error message
+6. What is code coverage?
+It is a measure which describe the degree of which the source code of the program has been tested
+7. Best practices to perform Unit Testing?
+Arrange, act , assert
+One assert per test method
+Keep it short, sweet and visible
+8. What is mocking?
+Mocking is creating object that simulate the behavior of real objects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maven Fundamentals
+1. What is Maven? And how does it work?
+Maven is a popular open source build tool for enterprise Java Projects, designed to take much of the hard work out of the build process. Maven uses a declarative approach where the project structure and contents are described rather than task based
+2. POM is project object model and it contains a detailed description of your project, including information about version and configuration management
+3. An artifact is a file, usually a JAR that get deployed to a Maven repository. Each artifact has a group ID and artifact ID and a version string
+4.
+
+
+
+
+
+Day 1 Answer
+1) Explain SDLC at a high level:
+Software development life cycle is a process of making software with best quality, low cost and least time if possible
+2) What is waterfall and why it is still relevant
+Waterfall is one of the SDLC in which we have to finish each iteration or phase before we can move on to next steps. Waterfall is still relevant because in some cases where we know clearly about our product requirements and design, and also when project is small and technology is easy to use
+3) Explain Agile Model with a use case and the role of SCRUM in that
+Agile model is a SDLC in which we divide our product into each iterations and increment them based on customer needs and provide a working software product.
+SCRUM is an Agile model where people adapt to complex problem by creatively and productively deliver product with highest quality.
+4) Who is Scrum Master
+Scrum Master is a person who manage and help with SCRUM process. This person is responsible to guiding to the rest of the team about the SCRUM process
+5) Differentiate between Product/Sprint Backlog
+Product backlog is all the things need to be done in the whole project. This would divide project into each steps and deliver to the develop team with time duration of how much time of each task needs.
+Spring backlog is a subset of Product backlog and it will have small items and each items will be finished during each sprint
+6) What is Epic & Story
+Epic is a list of items or tasks that have common requirements.
+Story is a basic unit of work
+7) What is called Velocity in SCRUM
+Velocity is an average of time of the team that need to complete a sprint or iteration
+8) Explain the SCRUM ceremonies
+Ceremonies is a list of events including sprint planning, review, retrospective and daily scrum
+9) What is grooming?
+Grooming is meeting in a team where team discusses about what we have done and prepare for our next sprint step
+10) How Jira board is effective in SCRUM
+Jira board is effective because it is flexible to view, manage, review and report on work in progress.
+11) Differentiate between SCRUM & Waterfall
+Waterfall is very strict to requirement, principle and documentation
+SCRUM is much more flexible and independent to the team
+2) Explain the responsibilities of Product Owner
+Product owner is responsible for maximizing the value of the project by managing the product backlog effectively
+
+Day 2 Answer
+Client-Server: Client requests a resource and server provide that resource
+Features:         
+* client request information and server give them the access to that information
+* Client and sever need to follow some protocols to interact
+* False request happens causing denial of service
+Web servers in a client server environment:
+Basically, a client request a web pages to visit and server provides them that request
+What is the role of the presentation layer
+ Presentation layer is where all the front end happens, it is often a user interface accessing through a web based application or web browser
+They say this architecture is secure, how is it done in your opinion?
+Having this architecture would help developers the ability to develop with best quality and higher speed because it is allowing each developer to focus on the layer
+Database Server (Two-Tier) Architectures
+the client workstation is responsible for managing the user interface, including presentation logic, data processing logic, and business rules logic; the database server is responsible for database storage, access, and processing
+3 tier architecture 
+Including presentation layer, application layer and data layer
+What is a File server?
+A central server in computer networks to provide systems to connected clients or shared networks
+SOA & MicroServices
+Benefit of SOA: align business with technology, increase the business agility, improve business wokflow, longer lifespan application
+Loosing coupling
+It is how services are implemented without impacting other services or applications. It interacts through public interface
+Are web services and SOA the same?
+Web service is web technology use to send and receive messages
+SOA is implemented loosing coupling based service application
+What is a reusable service?
+SOA and web service are complied that consume service is reused on the other
+What are the disadvantages of SOA?
+Short lived applications are limited in scope
+Loose coupling is necessary in some cases
+What is the most important skill needed to adopt SOA ?technical or cultural?
+Cultural even though technical is needed
+List down the advantages of Microservices Architecture.
+Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services that are
+* Highly maintainable and testable
+* Loosely coupled
+* Independently deployable
+* Organized around business capabilities
+* Owned by a small team
